@@ -4,7 +4,7 @@ public class StockBuySell {
         int min=Integer.MAX_VALUE;
         int profit=0;
         
-        int sc=0;
+        
         for(int i=0;i<array.length-1;i++){
              min=Math.min(min,array[i]);
              profit=array[i]-min;

@@ -24,35 +24,33 @@
 
 
 public class removeduplicate {
-    public static void duplicates(int array []){
-        int i=0;
-        for(int j=1;j<array.length;j++){
-            if(array[i]!=array[j]){
-                array[i+1]=array[j];
+
+    public static int duplicates(int array[]) {
+
+        int i = 0;
+
+        for (int j = 1; j < array.length; j++) {
+
+            if (array[i] != array[j]) {
+
                 i++;
-
+                array[i] = array[j];
             }
-            
         }
-    }
-    public static void main(String[] args) { 
-        int array[]={1,1,2,3,4,4,5};
-        int newlength=duplicates(array);
-        System.out.println("array after removing the duplicates element ");
-        for(int i )
 
-        
+        return i + 1;
     }
 
-    
-}
-   
+    public static void main(String[] args) {
 
- public static void main(String[] args) {
-        int array[]={1,2,2,3,3,4,4,4,4};
-        int newlength=DuplicateElement(array);
+        int array[] = {1, 1, 2, 3, 3, 4, 4, 4, 4};
+
+        int newlength = duplicates(array);
+
         System.out.println("Array after removing duplicates:");
-        for(int i=0;i<newlength;i++){
-          System.out.print(array[i] + " ");
+
+        for (int i = 0; i < newlength; i++) {
+            System.out.print(array[i] + " ");
         }
-        
+    }
+}
