@@ -30,7 +30,7 @@ public class IsomorphicString {
     }
     public static void main(String[] args) {
         String str1="egg";
-        String str2="ade";
+        String str2="add";
          System.out.println(Solution(str1, str2));
 
     }
