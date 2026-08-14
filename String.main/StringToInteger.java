@@ -23,8 +23,10 @@ public class StringToInteger {
             int digit=str.charAt(i)-'0';
             number=number*10+digit;
             i++;
+        }
+        
 
-        }if (sign == 1 && number > 2147483647) {
+         if (sign == 1 && number > 2147483647) {
                 return 2147483647;
             }
 
