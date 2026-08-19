@@ -12,6 +12,7 @@ public class CapitalizeFirstLastLetter {
             }
         }
         int end=arr.length-1;
+          arr[start]=Character.toUpperCase(arr[start]);
          arr[end]=Character.toUpperCase(arr[end]);
 
         str=new String(arr);
